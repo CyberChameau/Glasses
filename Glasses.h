@@ -1,7 +1,6 @@
 #ifndef GLASSES_H
 #define GLASSES_H
 
-// Libs
 #include <Arduino.h>
 
 // LED
@@ -17,8 +16,12 @@
 
 // functions
 void SetColor (byte red, byte green, byte blue);
-void SetColor (int color);
+void SetColor (uint32_t color);
 
 void CheckButtons();
+
+// Libs
+#include "Utils.hpp"
+#include "Modes.h"
 
 #endif
